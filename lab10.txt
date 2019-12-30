@@ -2,17 +2,14 @@ Q1 Fill in the blank: passenger struct: What is the name of the variable that...
 1 Point
 What is the name of the variable that holds the floor the passenger started at?
 
-from_floor
 Q2 Fill in the blank: start_passenger: What function that you will write is ...
 1 Point
 What function that you will write is called from the start_passenger function?
 
-passenger_request
 Q3 Fill in the blank: start_elevator: What function will you write that gets ...
 1 Point
 What function will you write that gets called in start_elevator?
 
-Elevator_ready
 Q4 Multiple Choice: passenger_request: As it is written, right now in passen...
 1 Point
 As it is written, right now in passenger_request a passenger waiting for an elevator to arrive will
@@ -20,16 +17,15 @@ As it is written, right now in passenger_request a passenger waiting for an elev
 "busy wait" by repeatedly evaluating the loop
 block on the pthread_mutex_lock call
 block on the enter(passenger,0) call
+
 Q5 Fill in the Blank: elevator_ready: What variable holds which floor the e..
 1 Point
 What variable holds which floor the elevator is currently at?
 
-current_floor
 Q6 Fill in the Blank: elevator_ready: If your current state is ELEVATOR_ARR...
 1 Point
 If your current state is ELEVATOR_ARRIVED, what will you change your state to?
 
- ELEVATOR_OPEN
 Q7 Did you attend today's lab section?
 6 Points
 Yes

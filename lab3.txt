@@ -4,7 +4,6 @@ Take this hypothetical scenario:
 
 You run an executable a.out and get an error that says "./a.out: error while loading shared libraries: libshared.so: cannot open shared object file: No such file or directory." What is the name of the shared library a.out cannot find?
 
-libshared.so
 Q2 Using Dynamic Libraries
 3 Points
 You want to use a shared library for your program. You will need to compile
@@ -13,6 +12,7 @@ Both the shared library and the program that uses it.
 The shared library only.
 The program only (while having access to the shared library).
 The program only (the shared library is not needed at all during the compilation step).
+
 Q3 Using Dynamic Libraries II
 3 Points
 You want to change the behavior of a program by changing the behavior of a function from a shared library it uses. You make the changes to the shared library. Now, you need to recompile:
@@ -20,18 +20,16 @@ You want to change the behavior of a program by changing the behavior of a funct
 only the program
 both the program and the shared library
 only the shared library
+
 Q4 Building Dynamic Libraries
 3 Points
 What is the gcc flag for creating position independent code? (e.g. what would replace XXX in the line below)
 
 gcc -c -Wall -Werror -XXXX sharedlib.c
 
-fpic
 Q5 Building Dynamic Libraries II
 4 Points
 You're compiling a program that uses the shared library libfasttimes.so. What is the flag you will pass gcc to tell it to use that library? (e.g. what will replace XXX in the line below?)
 
 gcc -L$(PWD) uselib.c -o uselib -XXX
-
-llibfasttimes
 

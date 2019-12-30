@@ -4,10 +4,7 @@ elevator_ready has a parameter check as it's first line. If you were adapting th
 
 NOTE: please give a logical operator (>,<=,==, etc.)
 
-<
 Q2 Fill in the blank: passenger_request: argument matching
 1 Point
 Which function does main.c pass in for the exit argument of passenger_request?
-
-passenger_exit
 

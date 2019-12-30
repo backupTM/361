@@ -5,11 +5,11 @@ The chunk pointer points to
 The size of the current chunk
 The size of the next chunk
 The size of the previous chunk
+
 Q2 chunk_size
 3 Points
 What will the last three bits of c be after the bitwise AND in the chunk_size function?
 
-000
 Q3 next_chunk
 2 Points
 What will ((void*)c+chunk_size(c)) point to?
@@ -17,6 +17,7 @@ What will ((void*)c+chunk_size(c)) point to?
 chunk
 nextchunk
 mem
+
 Q4 in_use
 2 Points
 The in_use function will return 1 if
@@ -24,6 +25,7 @@ The in_use function will return 1 if
 The previous chunk is in use
 The current chunk is in use
 The next chunk is in use
+
 Q5 marking
 3 Points
 The code for clear_mark is below. If we pass in a size_t where the six lower-order bits are 111011, what will these 6 bits be after the clear_mark method?
@@ -31,5 +33,3 @@ The code for clear_mark is below. If we pass in a size_t where the six lower-ord
 void clear_mark(size_t* chunk){
   (*chunk)&=(~0x2);
 }
-001001
-

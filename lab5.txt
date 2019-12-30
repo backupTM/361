@@ -11,6 +11,7 @@ the terminal
 output.txt
 both the terminal and output.txt
 nowhere
+
 Q2 modes 1
 5 Points
 Your shell needs to support the following redirection option:
@@ -19,17 +20,14 @@ command >> filename Redirects the output of command to filename. The output from
 
 What flag should you pass to open(filename, mode) to make sure the existing contents of the file are not overwritten? (HINT: Look at the man page for open using man 2 open, or our lecture notes in file I/O.)
 
-O_APPEND
 Q3 flags 1
 5 Points
 When we redirect output, we want to create the file if it does not already exist. This means you should open it using the O_CREAT flag. What mode should you specify to ensure that you (the user) will be able to write to the file? (Again, "man 2 open" will have very helpful information for you.)
 
-S_IRWXU
 Q4 flags 2
 5 Points
 We want to make sure that any user on the system can open the files we create for file redirection. What mode should we pass in to make sure anyone can read the file?
 
-S_IRWXO
 Q5 signal handler
 5 Points
 When handling signals, it is important to only use async safe functions, that is, functions which are guaranteed to not have their functionality broken if they do things like use shared buffers but are interrupted during operation. You can read more about it at http://man7.org/linux/man-pages/man7/signal-safety.7.html.
