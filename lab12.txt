@@ -1,0 +1,13 @@
+Q1 Fill in the blank: elevator_ready: multiple elevators update
+1 Point
+elevator_ready has a parameter check as it's first line. If you were adapting this line for functionality with multiple elevators and could only change the logical operator, what would you change it to? Hint: consider the fact that the parameter elevator is now almost certainly an index
+
+NOTE: please give a logical operator (>,<=,==, etc.)
+
+<
+Q2 Fill in the blank: passenger_request: argument matching
+1 Point
+Which function does main.c pass in for the exit argument of passenger_request?
+
+passenger_exit
+

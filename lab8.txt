@@ -1,0 +1,37 @@
+Q1 tcp socket
+2 Points
+in this line of code:
+
+int server_sock = socket(AF_INET6, SOCK_STREAM, 0);
+
+which parameter specifies that we want a TCP socket?
+
+0
+Q2 delimiter
+3 Points
+What sequence of characters will every HTTP GET request end with? Use proper C escape sequences (https://en.wikipedia.org/wiki/Escape_sequences_in_C first column in the table on this page) if necessary.
+
+\r\n\r\n
+Q3 serve_request
+3 Points
+What will the value of filename be after the code below runs if requested_file is "kittens.gif"?
+
+filename[0] = ’/’;
+strncpy(&filename[1],requested_file,4095);
+/kittens.gif
+Q4 stat
+2 Points
+If a file does not exist, what will the return value of stat be?
+
+-1
+Q5 content-type
+3 Points
+When returning the contents of the file kittens.gif (which contains an animated gif of a kitten), what should the Content-Type header be set to?
+
+image/gif
+Q6 stat directory test
+2 Points
+What is the name of the macro you should use to check if a file is a directory? Do not include the argument or the parentheses: for instance if the macro is invoked via MACRONAME(statbuf.st_mode), your answer should be MACRONAME.
+
+S_ISDIR
+

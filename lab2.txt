@@ -1,0 +1,31 @@
+Q1 gdb_1
+2.5 Points
+What is the final value of variable c in trygdb?
+
+7
+Q2 gdb_2
+2.5 Points
+If you watch variable a, what line does gdb breaks on?
+
+11
+Q3 strace_1
+2.5 Points
+The open system call returns a file descriptor. What is the file descriptor of gdb.c?
+
+3
+Q4 strace_2
+2.5 Points
+The last line trystrace prints out is the start of an include statement. What file is this line coming from? You should be able to figure this out just by looking at the strace output, not the source code.
+
+gdb.c
+Q5 ltrace_1
+2.5 Points
+Printf and puts are standard library functions that call a system call. What system call do they both use? You should be able to figure this out by running both ltrace and strace on ./tryltrace.
+
+write
+Q6 ltrace_2
+2.5 Points
+How many times is the strncat function called? Again, you should be able to figure this out just from the ltrace output, without looking at the source code.
+
+5
+

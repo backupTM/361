@@ -1,0 +1,51 @@
+Q1 Pthread 1
+1 Point
+Calling pthread_create will cause the new thread to start running.
+
+True
+False
+Q2 pthread 2
+1 Point
+The function to call is passed in to pthread create as argument number:
+
+1
+2
+3
+4
+Q3 pthread 3
+1 Point
+The arguments to the new thread function are passed in as argument(s):
+
+1
+2
+3
+4
+4, 5, 6, (one extra per number of additional arguments)
+Q4 homework5
+1 Point
+Which function should be passed to pthread_create?
+
+accept
+bind
+parse_request
+serve_request
+pthread_join
+Q5 diff
+1 Point
+When testing two files that should be identical, diff will output:
+
+Files (first filename) and (second filename) differ.
+No output
+Binary files (first filename) and (second filename) do not differ.
+Binary files (first filename) and (second filename) differ.
+Q6 curl
+ Point
+Run curl on a systemsX machine as instructed in the lab writeup, and request the URL http://www.uic.edu/favicon.ico. Paste below as your answer the entire first line of the request - the first line that starts with a >. Include the greater than symbol in your answer.
+
+> GET /favicon.ico HTTP/1.1
+Q7 curl 2
+1 Point
+Using the same command as above, Paste below as your answer the entire first line of the response - the first line of the response starts with a <. Include the less than symbol in your answer.
+
+< HTTP/1.1 200 OK
+1

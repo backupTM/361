@@ -1,0 +1,42 @@
+Q1 CMD Pipe1
+2 Points
+Suppose the current directory has three files: CS, CS361 and CS361_ROCKS. What is the output of the following command:
+
+ls | grep CS | grep CS3 | grep CS361 | grep CS361_ROCKS ?
+
+Nothing
+CS
+CS and CS361
+CS361_ROCKS
+Q2 CMD pipe2
+3 Points
+Pipes are useful in all sorts of situations. For example, what does this command do:
+
+cat file.txt | grep "name_here" | tee file2.txt | wc -l
+
+Always remember that every linux command is thoroughly documented. If you don't know what a command does, just look it up.
+
+Counts the number of times "name_here" appears in file.txt and writes this number in file2.txt
+Outputs the number of lines in file.txt that contain "name_here" and also writes the lines to file2.txt
+Command fails
+Q3 C pipe1
+2 Points
+What is the difference between pipe2(fd, 0) and pipe(fd)? (man pipe)
+
+None
+Saves extra calls to fcntl
+The first one sets a flag on the two new file descriptors
+Q4 C pipe2
+2 Points
+In the example provided (lab6.c):
+
+Only the child sends information to the parent
+Only the parent sends information to the child
+Both the parent and the child send information to each other
+Q5 C pipe3
+3 Points
+What is true about unnamed pipes?
+
+Work in a FIFO (first in first out) manner.
+Allow communication only between related processes
+Both

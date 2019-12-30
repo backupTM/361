@@ -1,0 +1,32 @@
+Q1 stringparsing.c 1
+3 Points
+To pass a command to exec, you must pass in two arguments. The first is the filepath of the program you want to exec, and the second is an array of strings where the first entry is the filepath of the program, and all following entries are each an argument to pass to the program. Imagine you wanted to add an exec command to stringparsing.c to execute whatever line the user typed. What variable in stringparsing.c would hold the first argument to pass to exec? In other words, if I typed "/bin/ls -l -a" what would I pass to exec to pass "/bin/ls" as the first parameter?
+
+argsarray[0]
+Q2 stringparsing.c 2
+2 Points
+The second argument passed to exec is an char** array where the first element is the filepath of the program to exec, and each following element is an argument to the program. If I typed "/bin/ls -l -a" at the command line, which variable in stringparsing.c should you pass as the second argument to exec?
+
+argsarray
+Q3 forkexample.c 1
+2 Points
+Traditionally exiting with status code 0 indicates that there were no errors in your program. What command would you use to exit with status 0?
+
+exit(0);
+Q4 forkexample.c 2
+3 Points
+What flag would you pass to waitpid() in order for it to return immediately if no child has died?
+
+WNOHANG
+Q5 execexample.c 1
+2 Points
+Try adding a print statement immediately after exec in execexample.c. Does your print appear when you run the program?
+
+yes
+no
+Q6 execexample.c 2
+3 Points
+Which exec command takes as parameters a file name and an array of arguments, searches the PATH environment variable if it cannot find the filename in the current directory, and takes an array of char * with environment variables to add to the child's environment?
+
+execvpe
+
